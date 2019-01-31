@@ -1,0 +1,48 @@
+.tariff {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 0 20px 0;
+
+  font-family: Roboto, "Open Sans", sans-serif;
+  text-align: center;
+
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $lightGray;
+  }
+}
+
+.tariff__image {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.tariff__name {
+  margin: 0;
+  padding: 20px 0 20px 0;
+
+  color: $blue;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.tariff__description {
+  width: 275px;
+  margin: 0;
+
+  color: $gray;
+}
+
+.tariff__price {
+  padding: 10px 0 0 0;
+
+  color: $blue;
+}

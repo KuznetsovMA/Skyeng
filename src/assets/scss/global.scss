@@ -1,7 +1,13 @@
+* {
+  outline: 0 solid red;
+}
+
 body {
-    height: 100vh;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    background-color: $lightblue;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
+  background-color: $lightblue;
 };

@@ -1,0 +1,21 @@
+.price {
+  display: flex;
+}
+
+.price__currency {
+  font-weight: 700;
+  font-size: 18px;
+  vertical-align: super;
+}
+
+.price__value {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.price__period {
+  align-self: flex-end;
+
+  font-size: 12px;
+  vertical-align: sub;
+}
