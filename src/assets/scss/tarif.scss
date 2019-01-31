@@ -1,0 +1,21 @@
+.tarif {
+    font-family: Roboto, "Open Sans", sans-serif;
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tarif__name {
+    text-align: center;
+    color: $blue;
+    text-transform: uppercase;
+}
+
+.tarif__description {
+    text-align: center;
+    color: $gray;
+}
+
+.tarif__price {
+    color: $blue;
+}
