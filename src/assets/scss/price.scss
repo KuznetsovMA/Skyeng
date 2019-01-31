@@ -1,5 +1,8 @@
 .price {
   display: flex;
+  padding: 10px 0 0 0;
+
+  color: $blue;
 }
 
 .price__currency {
@@ -18,4 +21,22 @@
 
   font-size: 12px;
   vertical-align: sub;
+}
+
+@media screen and (min-width: 1100px) {
+  .price {
+    padding: 20px 0 0 0;
+  }
+
+  .price__value {
+    font-size: 35px;
+  }
+
+  .price__currency {
+    font-size: 21px;
+  }
+
+  .price__period {
+    font-size: 14px;
+  }
 }

@@ -12,7 +12,7 @@
   display: block;
   margin: 0 auto;
   padding: 0;
-  padding: 10px 20px 10px 20px;
+  padding: 12px 25px 12px 25px;
 
   font-size: 18px;
   color: white;
@@ -21,4 +21,11 @@
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1100px) {
+    .tariffs {
+        width: 1030px;
+        padding: 25px 0px 25px 0px;
+    }
 }
