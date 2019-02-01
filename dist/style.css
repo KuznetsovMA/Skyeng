@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Roboto, "Open Sans", sans-serif;
+  text-align: center;
+  background-color: #85a5d4; }
+
+.container {
+  width: 100%;
+  padding: 50px 0px 50px 0px; }
+
+.hidden {
+  display: none; }
+
+.button {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding: 12px 40px 12px 40px;
+  font-size: 18px;
+  color: white;
+  background-color: #2d58ff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer; }
+
+@media screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; } }
+
+.tariffs, .popup {
+  box-shadow: 0 5px 25px 4px rgba(0, 0, 0, 0.35); }
+
+.tariffs {
+  width: 360px;
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
+  background-color: white;
+  border-radius: 5px; }
+
+@media screen and (min-width: 1100px) {
+  .tariffs {
+    width: 1030px;
+    padding: 25px 0 25px 0; } }
+
+.tariff {
+  width: 320px;
+  margin: 0 auto;
+  padding: 30px 0 20px 0;
+  border-radius: 5px;
+  cursor: pointer; }
+  .tariff:hover {
+    background-color: #f5f4f3; }
+
+.tariff__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center; }
+
+.tariff__image {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  padding: 0; }
+
+.tariff__name {
+  margin: 0;
+  padding: 20px 0 20px 0;
+  font-size: 24px;
+  color: #5572d6;
+  text-transform: uppercase;
+  letter-spacing: 3px; }
+
+.tariff__description {
+  width: 275px;
+  margin: 0;
+  color: #a7a9ad; }
+
+@media screen and (min-width: 1100px) {
+  .tariff {
+    box-sizing: border-box;
+    width: 330px;
+    margin: 0; } }
+
+.tariffs-list {
+  width: inherit;
+  margin: 0 0 25px 0;
+  padding: 0;
+  list-style: none; }
+
+@media screen and (min-width: 1100px) {
+  .tariffs-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 990px;
+    margin: 0 auto 25px auto; } }
+
+.price {
+  display: flex;
+  padding: 10px 0 0 0;
+  color: #5572d6; }
+
+.price__currency {
+  font-weight: 700;
+  font-size: 18px;
+  vertical-align: super; }
+
+.price__value {
+  font-weight: 700;
+  font-size: 30px; }
+
+.price__period {
+  align-self: flex-end;
+  font-size: 12px;
+  vertical-align: sub; }
+
+@media screen and (min-width: 1100px) {
+  .price {
+    padding: 20px 0 0 0; }
+  .price__value {
+    font-size: 35px; }
+  .price__currency {
+    font-size: 21px; }
+  .price__period {
+    font-size: 14px; } }
+
+.wrapper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  background-color: rgba(0, 0, 0, 0.35); }
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  padding: 25px 0 25px 0;
+  background-color: white;
+  border-radius: 5px;
+  transform: translate(-50%, -50%); }
+  .popup .tariff__wrapper {
+    padding: 30px 0 25px 0; }
+
+.popup__title {
+  font-weight: 700;
+  font-size: 21px; }
+
+.popup__close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(assets/images/cross.svg?cabc5c16232c71811750335d58033dc2);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15px;
+  border: none;
+  cursor: pointer; }
+
+@media screen and (min-width: 1100px) {
+  .popup {
+    width: 480px; }
+    .popup .tariff__description {
+      width: 400px; } }
+
