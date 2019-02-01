@@ -1,13 +1,13 @@
 body {
-  margin: 0;
   height: 100%;
+  margin: 0;
   font-family: Roboto, "Open Sans", sans-serif;
   text-align: center;
   background-color: #85a5d4; }
 
 .container {
   width: 100%;
-  padding: 50px 0px 50px 0px; }
+  padding: 50px 0 50px 0; }
 
 .hidden {
   display: none; }
@@ -50,17 +50,22 @@ body {
 .tariff {
   width: 320px;
   margin: 0 auto;
-  padding: 30px 0 20px 0;
-  border-radius: 5px;
-  cursor: pointer; }
-  .tariff:hover {
-    background-color: #f5f4f3; }
+  border-radius: 5px; }
 
 .tariff__wrapper {
   display: flex;
   flex-direction: column;
   align-content: center;
-  align-items: center; }
+  align-items: center;
+  width: inherit;
+  padding: 30px 0 20px 0;
+  font-family: Roboto, "Open Sans", sans-serif;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; }
+  .tariff__wrapper:hover {
+    background-color: #f5f4f3; }
 
 .tariff__image {
   display: block;
@@ -79,6 +84,7 @@ body {
 .tariff__description {
   width: 275px;
   margin: 0;
+  font-size: 17px;
   color: #a7a9ad; }
 
 @media screen and (min-width: 1100px) {
@@ -146,7 +152,8 @@ body {
   border-radius: 5px;
   transform: translate(-50%, -50%); }
   .popup .tariff__wrapper {
-    padding: 30px 0 25px 0; }
+    padding: 30px 0 25px 0;
+    pointer-events: none; }
 
 .popup__title {
   font-weight: 700;
@@ -154,8 +161,8 @@ body {
 
 .popup__close {
   position: absolute;
-  right: 15px;
   top: 15px;
+  right: 15px;
   width: 15px;
   height: 15px;
   padding: 0;
