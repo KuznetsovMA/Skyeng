@@ -8,7 +8,7 @@ let conf = {
     ],
     "output": {
         path: path.join(__dirname, 'dist'),
-        publicPath: "/dist/",
+        publicPath: 'dist/',
         "filename": 'main.js'
     },
     devServer: {
@@ -39,7 +39,9 @@ let conf = {
                 use: [
                   {
                     loader: 'file-loader',
-                    options: {}
+                    options: {
+                        name: 'assets/images/[name].[ext]?[hash]'
+                    },
                   }
                 ]
             }
