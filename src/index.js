@@ -1,2 +1,2 @@
 import "./assets/scss/styles.scss";
-console.log(4);
+import "./assets/js/popup.js";
